@@ -1,6 +1,7 @@
 # simple DAiDASET
+## Cursor Composer Prompt
 
-## Introduction
+### Introduction
 
 The simple DAiDASET project is a versatile Python application built with FastAPI, designed to harness artificial intelligence for creating, managing, and analyzing JSONL dataset files. It features tools such as create-dataset.py, dataset-chooser.py, and dataset-evaluator.py, which standardize datasets based on predefined domains and category weights, facilitating the generation of assistant responses tailored to specific use cases. With support for input formats like .txt, .csv, .jsonl, and .pdf, the project streamlines data ingestion, allowing users to extract structured information, process prompts and responses, and analyze existing datasets.
 
@@ -8,18 +9,24 @@ A key focus of DAiDASET is fine-tuning Large Language Models (LLMs), such as Goo
 
 By combining flexibility, precision, and a focus on quality, the DAiDASET project provides a robust framework for dataset creation and management. Its tools empower users to produce high-quality datasets that enhance AI model accuracy and reliability while addressing the challenges of bias and generalization. This comprehensive solution simplifies the process of preparing datasets for fine-tuning AI models, ensuring optimal performance for Ai applications.
 
-## Cursor Composer Prompt
-
 ### Objective: 
 To develop a Python application using FastAPI to create, manage, and analyze JSONL dataset files for fine-tuning Large Language Models (LLMs).
 
 "The task is to create a versatile Python application named DAiDASET using FastAPI. The application should include the following components:
 
 **create-dataset.py:**
-Functionality to generate datasets based on user-defined parameters.
-Support for input formats: .txt, .csv, .jsonl, and .pdf.
-Standardize datasets according to predefined domains and category weights.
+- Functionality to generate datasets based on user-defined parameters.
+- Support for input formats: .txt, .csv, .jsonl, and .pdf.
+- Standardize datasets according to predefined domains and category weights.
 
+**JSONL File Format**
+The script creates and evaluates datasets in JSONL format. Each line in a JSONL file is a valid JSON object. Here's an example of what a dataset might look like:
+
+```jsonl
+{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "saas..."}, {"role": "assistant", "content": "History"}]}
+{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "diskussionsrunden..."}, {"role": "assistant", "content": "Retail"}]}
+{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "polis..."}, {"role": "assistant", "content": "Consumer Electronics"}]}
+```
 **dataset-chooser.py:**
 A module that allows users to select datasets based on specific criteria.
 Implement filtering options based on domain relevance and dataset size.
@@ -28,7 +35,7 @@ Implement filtering options based on domain relevance and dataset size.
 Tools to analyze existing datasets for quality and bias.
 Generate reports that highlight potential issues and suggest improvements.
 
-**Technical Constraints**
+## Technical Constraints
 Ensure that all components are built with best practices in mind, including error handling and input validation.
 Use Python's type hints for improved code clarity and maintainability.
 Implement logging for debugging and tracking application performance.
@@ -37,16 +44,6 @@ Fine-Tuning LLMs
 Integrate functionality to fine-tune LLMs such as Google Gemini 2.0 Flash and Phi-3.5.
 Curate data from various sources tailored to specific tasks, minimizing biases in model training.
 Include data augmentation techniques to create variations of data points, enhancing model robustness.
-
-## JSONL File Format
-
-Our scripts work with datasets in JSONL format. Each line in a JSONL file is a valid JSON object. Here's a glimpse of what our dataset might look like:
-
-```jsonl
-{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "saas..."}, {"role": "assistant", "content": "History"}]}
-{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "diskussionsrunden..."}, {"role": "assistant", "content": "Retail"}]}
-{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "polis..."}, {"role": "assistant", "content": "Consumer Electronics"}]}
-```
 
 ## Testing and Validation
 Ensure that each module includes unit tests to validate functionality, focusing on edge cases such as unsupported file formats or invalid input data. This example prompt is structured to provide clear objectives, technical constraints, and specific functionalities required for the DAiDASET project. 
