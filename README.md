@@ -1,6 +1,6 @@
 #### Introduction
 
-Welcome to the `data-preparation-for-fine-tuning` project, a robust and versatile Python toolkit designed for the meticulous preparation and comprehensive analysis of datasets from JSONL files. Our tools, `dataset-chooser.py` and `dataset-evaluator.py`, are not just scripts but powerful instruments in your data science arsenal. They enable users to homogenize datasets based on pre-specified weights for each category, particularly focusing on assistant responses. This feature is especially beneficial for fine-tuning machine learning models, ensuring the dataset aligns perfectly with your specific needs and biases are minimized.
+The `simple DAiDA` project is a robust and versatile Python toolkit designed to meticulously research, create, prepare, and analyze JSONL dataset files. The `create-dataset.py`, `dataset-chooser.py`, and `dataset-evaluator.py`, enable users to homogenize datasets based on pre-specified domain and weights for each category, particularly focusing on assistant responses. This feature is especially beneficial for fine-tuning machine learning models (especially Google Gemini 2.0 Flash), ensuring the dataset aligns perfectly with your specific needs and biases are minimized.
 
 #### JSONL File Format
 
@@ -11,21 +11,18 @@ Our scripts work with datasets in JSONL format. Each line in a JSONL file is a v
 {"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "diskussionsrunden..."}, {"role": "assistant", "content": "Retail"}]}
 {"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "polis..."}, {"role": "assistant", "content": "Consumer Electronics"}]}
 ```
-
 #### Installation and Setup
 
 1. **Clone the Repository:**
    ```
    git clone https://github.com/yourusername/data-preparation-for-fine-tuning.git
    cd data-preparation-for-fine-tuning
-   ```
-   
+   ``` 
 2. **Dependencies:**
    Python 3.6+ is required. Install dependencies using:
    ```
    pip install pandas rich configparser
    ```
-
 #### Configuration
 
 1. **config.ini File:**
@@ -44,7 +41,7 @@ Our scripts work with datasets in JSONL format. Each line in a JSONL file is a v
    [Settings]
    total_examples = 1000000
    ```
-
+   
 #### Usage
 
 1. **Dataset Preparation (`dataset-chooser.py`):**
@@ -52,7 +49,6 @@ Our scripts work with datasets in JSONL format. Each line in a JSONL file is a v
    ```
    python dataset-chooser.py
    ```
-
 2. **Dataset Analysis (`dataset-evaluator.py`):**
    Analyzes the prepared dataset, providing insightful metrics and distributions.
    ```
