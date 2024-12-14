@@ -24,9 +24,33 @@ The objective is to develop a versatile Python application, DAiDASET, using Fast
 The create-dataset.py script creates datasets in JSONL format. Each line in a JSONL file is a valid JSON object. Here's an example of what a dataset might look like:
 
 ```jsonl
-{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "saas..."}, {"role": "assistant", "content": "History"}]}
-{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "diskussionsrunden..."}, {"role": "assistant", "content": "Retail"}]}
-{"messages": [{"role": "system", "content": "Classify..."}, {"role": "user", "content": "polis..."}, {"role": "assistant", "content": "Consumer Electronics"}]}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s father?", "response": "", "relationship_type": "Paternal", "generation": "1st Generation", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s mother?", "response": "", "relationship_type": "Maternal", "generation": "1st Generation", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal grandfather?", "response": "", "relationship_type": "Paternal", "generation": "2nd Generation", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal grandmother?", "response": "", "relationship_type": "Paternal", "generation": "2nd Generation", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal grandfather?", "response": "", "relationship_type": "Maternal", "generation": "2nd Generation", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal grandmother?", "response": "", "relationship_type": "Maternal", "generation": "2nd Generation", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal great-grandfather?", "response": "", "relationship_type": "Paternal", "generation": "Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal great-grandmother?", "response": "", "relationship_type": "Paternal", "generation": "Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal great-grandfather?", "response": "", "relationship_type": "Maternal", "generation": "Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal great-grandmother?", "response": "", "relationship_type": "Maternal", "generation": "Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 2nd great-grandfather?", "response": "", "relationship_type": "Paternal", "generation": "2nd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 2nd great-grandmother?", "response": "", "relationship_type": "Paternal", "generation": "2nd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 2nd great-grandfather?", "response": "", "relationship_type": "Maternal", "generation": "2nd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 2nd great-grandmother?", "response": "", "relationship_type": "Maternal", "generation": "2nd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 3rd great-grandfather?", "response": "", "relationship_type": "Paternal", "generation": "3rd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 3rd great-grandmother?", "response": "", "relationship_type": "Paternal", "generation": "3rd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 3rd great-grandfather?", "response": "", "relationship_type": "Maternal", "generation": "3rd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 3rd great-grandmother?", "response": "", "relationship_type": "Maternal", "generation": "3rd Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 4th great-grandfather?", "response": "", "relationship_type": "Paternal", "generation": "4th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 4th great-grandmother?", "response": "", "relationship_type": "Paternal", "generation": "4th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 4th great-grandfather?", "response": "", "relationship_type": "Maternal", "generation": "4th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 4th great-grandmother?", "response": "", "relationship_type": "Maternal", "generation": "4th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 5th great-grandfather?", "response": "", "relationship_type": "Paternal", "generation": "5th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s paternal 5th great-grandmother?", "response": "", "relationship_type": "Paternal", "generation": "5th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 5th great-grandfather?", "response": "", "relationship_type": "Maternal", "generation": "5th Great-Grandparents", "enslaved_ancestor": ""}
+{"key_person": "George Edward Freeney Jr.", "question": "Who is George Edward Freeney Jr.'s maternal 5th great-grandmother?", "response": "", "relationship_type": "Maternal", "generation": "5th Great-Grandparents", "enslaved_ancestor": ""}
+
 ```
 **dataset-chooser.py:**
 A module that allows users to select datasets based on specific criteria.
