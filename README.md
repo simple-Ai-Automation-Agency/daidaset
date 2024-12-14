@@ -1,6 +1,6 @@
 #### Introduction
 
-The `simple DAiDA` project is a robust and versatile Python toolkit designed to meticulously research, create, prepare, and analyze JSONL dataset files. The `create-dataset.py`, `dataset-chooser.py`, and `dataset-evaluator.py`, enable users to homogenize datasets based on pre-specified domain and weights for each category, particularly focusing on assistant responses. This feature is especially beneficial for fine-tuning machine learning models (especially Google Gemini 2.0 Flash), ensuring the dataset aligns perfectly with your specific needs and biases are minimized.
+The DAiDASET project is a robust and versatile Python toolkit designed to meticulously use Ai to research, create, prepare, and analyze JSONL dataset files. The `create-dataset.py`, `dataset-chooser.py`, and `dataset-evaluator.py`, enable users to homogenize datasets based on pre-specified domain and weights for each category, particularly focusing on assistant responses. This feature is especially beneficial for fine-tuning machine learning models (especially Google Gemini 2.0 Flash), ensuring the dataset aligns perfectly with your specific needs and biases are minimized.
 
 #### JSONL File Format
 
