@@ -1,6 +1,10 @@
 #### Introduction
 
-The DAiDASET project is a robust and versatile Python FastAPI designed to meticulously use Ai to research, create, prepare, and analyze JSONL dataset files. The `create-dataset.py`, `dataset-chooser.py`, and `dataset-evaluator.py`, enable users to homogenize datasets based on pre-specified domain and weights for each category, particularly focusing on assistant responses. This feature is especially beneficial for fine-tuning machine learning models (especially Google Gemini 2.0 Flash), ensuring the dataset aligns perfectly with your specific needs and biases are minimized.
+The DAiDASET project is a versatile Python application built with FastAPI, designed to harness artificial intelligence for creating, managing, and analyzing JSONL dataset files. It features tools such as create-dataset.py, dataset-chooser.py, and dataset-evaluator.py, which standardize datasets based on predefined domains and category weights, facilitating the generation of assistant responses tailored to specific use cases. With support for input formats like .txt, .csv, .jsonl, and .pdf, the project streamlines data ingestion, allowing users to extract structured information, process prompts and responses, and analyze existing datasets.
+
+A key focus of DAiDASET is fine-tuning Large Language Models (LLMs), such as Google Gemini 2.0 Flash, Phi-3.5, and others by curating data from various sources, tailored to specific tasks and contexts. This approach minimizes biases and improves model performance in real-world applications. Fine-tuning involves training pre-existing models on domain-specific datasets, ensuring they reflect relevant knowledge, tone, and tasks. Additionally, the project incorporates data augmentation techniques to create variations of data points, reducing overfitting and improving model robustness across diverse scenarios.
+
+By combining flexibility, precision, and a focus on quality, the DAiDASET project provides a robust framework for dataset creation and management. Its tools empower users to produce high-quality datasets that enhance AI model accuracy and reliability while addressing the challenges of bias and generalization. This comprehensive solution simplifies the process of preparing datasets for fine-tuning AI models, ensuring optimal performance for Ai applications.
 
 #### JSONL File Format
 
